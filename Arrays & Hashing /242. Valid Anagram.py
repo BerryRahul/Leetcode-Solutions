@@ -21,3 +21,5 @@ def isAnagram(s, t):
 
     # Method 3 
     # return sorted(s) == sorted(t)
+
+isAnagram("anagram", "nagaram")
