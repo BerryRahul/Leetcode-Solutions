@@ -20,3 +20,20 @@ def findDuplicate(nums):
             slow2 = nums[slow2]
             if slow == slow2: 
                    return slow 
+        
+        #### Alternative Solution #####
+        # set removes the duplicate 
+        # the sum of nums - the sum of nums-1 divided the len(nums) - len(nums-1) will give the duplicate value 
+        # nums = [1,3,4,2,2]
+        # nums_updated = (1,3,4,2)
+        # sum(nums) - sum(nums_updated) = 2 
+        # len(nums) - len(nums_updated) = 1 
+        # 2/1 = 2 which is the duplicate number 
+        ######
+        
+        # nums_updated = set(nums)
+
+        # return (sum(nums) - sum(nums_updated)) / (len(nums) - len(nums_updated))
+            
+
+    
