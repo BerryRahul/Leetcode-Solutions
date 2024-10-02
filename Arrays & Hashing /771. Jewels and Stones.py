@@ -8,6 +8,3 @@ def numJewelsInStones(jewels, stones):
     for i in set(jewels):
         c += stones.count(i)
     return c
-
-
-numJewelsInStones("aA", "aAAbbbb")
